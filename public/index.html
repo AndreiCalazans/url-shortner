@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Timestamp API by andrei calazans">
+    <meta name="keywords" content="Timestamp API, andrei calazans">
+    <meta name="author" content="andrei calazans">
+    <meta name='viewport' content="width= device-width , initial-scale = 1.0">
+    <title>TimeStamp microservice</title>
+    <style>
+      body {
+        padding: 25px;
+      }
+      blockquote {
+        border-left: 5px solid lightgrey;
+      }
+      .title{
+        background-color: lightgrey;
+      }
+      code {
+        color: red;
+        background-color: pink;
+      }
+      footer {
+        text-align: center;
+        margin-top: 150px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>FreeCodeCamp BackEnd API project</h1>
+    <h2 class='title'>Timestamp Microservice</h2>
+    <blockquote cite="http://">
+      <ol>
+        <h3>User stories</h3>
+        <li> I can pass a string as a parameter,
+           and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        <li> If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ol>
+    </blockquote>
+    <h3 class='title'>Example of Usage</h3>
+    <code>https://andrei-timestamp-ms.herokuapp.com/july%2031%201991</code><br>
+    <code>https://andrei-timestamp-ms.herokuapp.com/680929200</code>
+    <h3 class='title'>Example output</h3>
+    <code>{
+"unix": 680929200,
+"natural": "july 31 1991"
+}</code>
+<footer>
+  <p>Made by <a href="https://andreicalazans.github.io/">Andrei Calazans</a> </p>
+</footer>
+  </body>
+</html>
